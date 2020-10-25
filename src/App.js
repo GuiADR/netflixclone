@@ -48,7 +48,7 @@ export default () => {
       <footer>
         Feito inspirado por uma aula da B7Web<br/>
         Direitos de imagem para Netflix<br/>
-        Dados pegos do site Themoviedb.org
+        Dados do site Themoviedb.org
       </footer>
 
       {movieList.length <= 0 &&
