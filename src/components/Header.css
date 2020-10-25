@@ -1,0 +1,74 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+header.black {
+    background-color: #141414;
+}
+
+.header--logo {
+    height: 25px;
+}
+.header--logo img {
+    height: 100%;
+}
+.header--user {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.header--user-img {
+    display: flex;
+    height: 70px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header--user-img img {
+    height: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.header--user-menu {
+    background-color: #141414;
+}
+.header--user-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header--user-menu li {
+    width: 100%;
+    padding: 0 15px;
+    line-height: 25px;
+}
+.header--user-menu li:hover {
+    background-color: #353535c9;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.header--user-main-menu,
+.header--user-lang-menu {
+    display: none;
+}
+.header--user-main-menu.show,
+.header--user-lang-menu.show {
+    display: block;
+} 
+.header--user-lang-menu {
+    color: #BBB;
+    font-size: 12px;
+}
+.header--user-lang-menu li {
+    line-height: 20px;
+    padding: 0 25px;
+}
