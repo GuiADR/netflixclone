@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeaturedMovie.css';
+import lang from '../../lang';
 
 export default ({item}) => {
     console.log(item);
@@ -31,8 +32,8 @@ export default ({item}) => {
                     </div>
                     <div className="featured--description">{description}</div>
                     <div className="featured--buttons">
-                        <a href={`/watch/${item.id}`} className="featured--watchbutton">► Assistir</a>
-                        <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ Minha Lista</a>
+                        <a href={`/watch/${item.id}`} className="featured--watchbutton">► {lang.play[sessionStorage.getItem('lang')]}</a>
+                        <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ {lang.mylist[sessionStorage.getItem('lang')]}</a>
                     </div>
                     <div className="featured--genres"><strong>Gêneros:</strong> {genres.join(', ')}</div>
                 </div>

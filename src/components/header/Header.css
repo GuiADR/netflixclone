@@ -72,3 +72,6 @@ header.black {
     line-height: 20px;
     padding: 0 25px;
 }
+.header--user-lang-menu li.active {
+    background-color: #686868;
+}

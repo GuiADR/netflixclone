@@ -65,10 +65,10 @@ export default () => {
                         <li onClick={()=>setShowLang(true)}>{language.lang}</li>
                     </ul>
                     <ul className={`header--user-lang-menu ${showLang ? 'show' : ''}`} >
-                        <li onClick={()=> setLang('pt-BR') }>{language.pt}</li>
-                        <li onClick={()=> setLang('en')  }>{language.en}</li>
-                        <li onClick={()=> setLang('es') }>{language.es}</li>
-                        <li onClick={()=> setLang('fr') }>{language.fr}</li>
+                        <li onClick={()=> setLang('pt-BR') } className={(sessionStorage.getItem('lang') === 'pt-BR')? 'active' : ''} >{language.pt}</li>
+                        <li onClick={()=> setLang('en')  } className={(sessionStorage.getItem('lang') === 'en')? 'active' : ''} >{language.en}</li>
+                        <li onClick={()=> setLang('es') } className={(sessionStorage.getItem('lang') === 'es')? 'active' : ''} >{language.es}</li>
+                        <li onClick={()=> setLang('fr') } className={(sessionStorage.getItem('lang') === 'fr')? 'active' : ''} >{language.fr}</li>
                     </ul>
                 </div>
             </div>
