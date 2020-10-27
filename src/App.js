@@ -13,6 +13,11 @@ export default () => {
 
   useEffect(()=>{
     const loadAll = async () => {
+
+      if(!sessionStorage.getItem('lang')){
+        sessionStorage.setItem('lang', 'pt-BR');
+      }
+      
       // Pegando a lista TOTAL
       let list = await Tmdb.getHomeList();
       setMovieList(list);
@@ -23,9 +28,7 @@ export default () => {
       let chosen = originals[0].items.results[randomChosen];
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
       setFeaturedData(chosenInfo);
-      if(!sessionStorage.getItem('lang')){
-        sessionStorage.setItem('lang', 'pt-BR');
-      }
+      
     }
 
     loadAll();
