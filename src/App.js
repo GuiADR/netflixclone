@@ -23,6 +23,9 @@ export default () => {
       let chosen = originals[0].items.results[randomChosen];
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
       setFeaturedData(chosenInfo);
+      if(!sessionStorage.getItem('lang')){
+        sessionStorage.setItem('lang', 'pt-BR');
+      }
     }
 
     loadAll();
