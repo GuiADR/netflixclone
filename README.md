@@ -2,7 +2,7 @@ Projeto criado com [Create React App](https://github.com/facebook/create-react-a
 
 ## Para iniciar o projeto
 
-<li>Primeiro deve ser feito uma conta no [The Movie db](https://www.themoviedb.org)</li>
+<li>Primeiro deve ser feito uma conta no <a href="https://www.themoviedb.org">The Movie db</a></li>
 <li>Gerar sua propria key da API</li>
 <li>Abrir o arquivo model.env subistituir o valor da variavel     REACT_APP_TMDB_KEY com a Key gerada</li>
 <li>Renomear o arquivo model.env para .env apenas</li>
