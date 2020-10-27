@@ -15,4 +15,4 @@ O aplicativo abrira em seu navegador no endereço [http://localhost:3000](http:/
 
 
 
-**Nota: Este aplicativo é apenas para estudos, ainda não está pronto adicionarem algumas funcionalidades como trailers e salvar os filmes fovoritos em lista**
+**Nota: Este aplicativo é apenas para estudos, ainda não está pronto algumas funcionalidades como trailers e salvar os filmes fovoritos em lista será adicionado**
